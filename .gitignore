@@ -1,0 +1,6 @@
+out
+dist
+*.log
+*.log.*
+target
+app/webapp/WEB-INF/classes
