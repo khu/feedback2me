@@ -59,10 +59,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FeedbackController.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JsonView.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/controller/JsonView.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="6" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedbackController.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/controller/FeedbackController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="1355" selection-end="1774" vertical-scroll-proportion="0.0">
+            <state line="18" column="43" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5239295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllEmailMessages.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/AllEmailMessages.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,34 +89,7 @@
       <file leaf-file-name="EmailMessage.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="48" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailMessagesTest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessagesTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="28" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailMessageTest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessageTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
+            <state line="21" column="37" selection-start="616" selection-end="687" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,25 +98,43 @@
       <file leaf-file-name="EmailMessages.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessages.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+            <state line="10" column="12" selection-start="196" selection-end="202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllEmailMessages.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/AllEmailMessages.scala">
+      <file leaf-file-name="EmailMessagesTest.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessagesTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="62" selection-end="62" vertical-scroll-proportion="0.10535117">
+            <state line="28" column="6" selection-start="350" selection-end="911" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TraversableOnce.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/sdk/scala-2.8.1.final/src/scala-library-src.jar!/scala/collection/TraversableOnce.scala">
+      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/webapp/WEB-INF/ftls/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="468" column="6" selection-start="17732" selection-end="17732" vertical-scroll-proportion="0.0">
+            <state line="7" column="33" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="24" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedbackServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/feedback2me/FeedbackServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,13 +151,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/src/com/wallofshame/controller/ShameController.scala" />
-        <option value="$PROJECT_DIR$/app/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/dist/expanded/feedback2me/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/app/src/com/wallofshame/service/UpdateWallOfShameService.scala" />
         <option value="$PROJECT_DIR$/app/test/com/wallofshame/UpdateWallOfShameServiceTest.scala" />
-        <option value="$PROJECT_DIR$/app/webapp/WEB-INF/ftls/index.ftl" />
         <option value="$PROJECT_DIR$/app/src/com/wallofshame/controller/FeedbackController.scala" />
-        <option value="$PROJECT_DIR$/app/src/com/feedback2me/controller/FeedbackController.scala" />
         <option value="$PROJECT_DIR$/app/webapp/WEB-INF/spring-feedback2me-servlet.xml" />
         <option value="$PROJECT_DIR$/app/src/com/feedback2me/service/FeedbackCollectionService.scala" />
         <option value="$PROJECT_DIR$/app/test/com/feedback2me/UpdateWallOfShameServiceTest.scala" />
@@ -156,7 +162,10 @@
         <option value="$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala" />
         <option value="$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessages.scala" />
         <option value="$PROJECT_DIR$/app/test/com/feedback2me/EmailMessagesTest.scala" />
+        <option value="$PROJECT_DIR$/app/webapp/WEB-INF/ftls/index.ftl" />
+        <option value="$PROJECT_DIR$/app/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/app/src/com/feedback2me/domain/AllEmailMessages.scala" />
+        <option value="$PROJECT_DIR$/app/src/com/feedback2me/controller/FeedbackController.scala" />
       </list>
     </option>
   </component>
@@ -218,6 +227,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -241,6 +286,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback2.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ftls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,7 +407,7 @@
       <recent name="com.feedback2me" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.EmailMessagesTest">
+  <component name="RunManager" selected="Application.FeedbackServer">
     <configuration default="false" name="FeedbackServer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.feedback2me.FeedbackServer" />
       <option name="VM_PARAMETERS" />
@@ -533,11 +604,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="22" width="1218" height="778" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10909091" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.669697" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -546,9 +617,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786325" sideWeight="0.68939394" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22649573" sideWeight="0.69545454" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30454546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30454546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -602,34 +673,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/com/feedback2me/FeedbackServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="1.0886288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/controller/JsonView.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="227" selection-end="227" vertical-scroll-proportion="0.28093645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="40" selection-start="2852" selection-end="2852" vertical-scroll-proportion="0.22240803">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/webapp/WEB-INF/ftls/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.10194175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/service/FeedbackCollectionService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="4" selection-start="196" selection-end="196" vertical-scroll-proportion="0.33810377">
@@ -644,58 +687,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/controller/FeedbackController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1355" selection-end="1774" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
+        <state line="16" column="30" selection-start="939" selection-end="939" vertical-scroll-proportion="0.5618729">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessageTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+        <state line="19" column="5" selection-start="614" selection-end="614" vertical-scroll-proportion="0.61204016">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/sdk/scala-2.8.1.final/src/scala-library-src.jar!/scala/collection/TraversableOnce.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="468" column="6" selection-start="17732" selection-end="17732" vertical-scroll-proportion="0.0">
+        <state line="468" column="6" selection-start="17732" selection-end="17732" vertical-scroll-proportion="-1.2750809">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessagesTest.scala">
+    <entry file="file://$PROJECT_DIR$/server/src/com/feedback2me/FeedbackServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+        <state line="43" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/webapp/WEB-INF/ftls/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="24" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/controller/JsonView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="48" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+        <state line="21" column="37" selection-start="616" selection-end="687" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessagesTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="6" selection-start="350" selection-end="911" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessages.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+        <state line="10" column="12" selection-start="196" selection-end="202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/AllEmailMessages.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="62" selection-end="62" vertical-scroll-proportion="0.10535117">
+        <state line="4" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/controller/FeedbackController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5239295">
           <folding />
         </state>
       </provider>
