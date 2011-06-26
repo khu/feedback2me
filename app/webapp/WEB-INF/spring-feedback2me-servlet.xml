@@ -7,7 +7,7 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-    <context:component-scan base-package="com.wallofshame"/>
+    <context:component-scan base-package="com.feedback2me"/>
     <context:annotation-config/>
 
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
@@ -23,10 +23,10 @@
 
 
     <bean id="scheduledTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
-        <property name="delay" value="30000"/>
+        <property name="delay" value="1000"/>
         <!-- run every 30 seconds -->
-        <property name="period" value="300000"/>
-        <property name="timerTask" ref="updateWallOfShameService"/>
+        <property name="period" value="7200000"/>
+        <property name="timerTask" ref="feedbackCollectionService"/>
     </bean>
 
 
