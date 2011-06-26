@@ -8,14 +8,12 @@ class EmailMessageTest extends Spec with ShouldMatchers {
   describe("parse the email to json") {
     it("should parse to json with timestamp") {
       val expectedMessage = """{
-      "id": "jshist-02",
-      "title": "JavaScript is Born",
-      "description": "LiveScript is Renamed JavaScript in a joint
-	              announcement with Netscape and Sun Microsystems",
-      "startdate": "1995-12-04 12:00:00",
-      "enddate": "1995-12-04",
+      "id": "1009818061001",
+      "title": "Pay attention to your careless",
+      "description": "jar",
+      "startdate": "2002-01-01 01:01:01",
+      "enddate": "2002-01-01 01:01:01",
       "date_display": "day",
-      "link": "http: //en.wikipedia.org/wiki/JavaScript",
       "importance": 50,
       "icon":"triangle_orange.png"
     }"""
