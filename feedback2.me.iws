@@ -71,7 +71,7 @@
       <file leaf-file-name="EmailMessage.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="8" selection-start="280" selection-end="705" vertical-scroll-proportion="0.0">
+            <state line="14" column="20" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="EmailMessageTest.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessageTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.43002546">
+            <state line="19" column="5" selection-start="614" selection-end="614" vertical-scroll-proportion="0.592233">
               <folding />
             </state>
           </provider>
@@ -127,8 +127,8 @@
         <option value="$PROJECT_DIR$/app/webapp/WEB-INF/spring-feedback2me-servlet.xml" />
         <option value="$PROJECT_DIR$/app/src/com/feedback2me/service/FeedbackCollectionService.scala" />
         <option value="$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessages.scala" />
-        <option value="$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala" />
         <option value="$PROJECT_DIR$/app/test/com/feedback2me/UpdateWallOfShameServiceTest.scala" />
+        <option value="$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala" />
         <option value="$PROJECT_DIR$/app/test/com/feedback2me/EmailMessageTest.scala" />
       </list>
     </option>
@@ -453,9 +453,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786325" sideWeight="0.68939394" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2786325" sideWeight="0.68939394" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31060606" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47878787" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -574,14 +574,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/com/feedback2me/domain/EmailMessage.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="280" selection-end="705" vertical-scroll-proportion="0.0">
+        <state line="14" column="20" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/test/com/feedback2me/EmailMessageTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.43002546">
+        <state line="19" column="5" selection-start="614" selection-end="614" vertical-scroll-proportion="0.592233">
           <folding />
         </state>
       </provider>
