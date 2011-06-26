@@ -4,7 +4,7 @@
     <facet type="scala" name="Scala">
       <configuration>
         <option name="compilerLibraryLevel" value="Global" />
-        <option name="compilerLibraryName" value="scala-compiler-2.8.1 (2)" />
+        <option name="compilerLibraryName" value="scala-global" />
       </configuration>
     </facet>
   </component>
@@ -16,7 +16,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="scala-library-2.8.1 (2)" level="application" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="module-library">
       <library>
@@ -36,6 +35,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="scala-global" level="application" />
   </component>
 </module>
 

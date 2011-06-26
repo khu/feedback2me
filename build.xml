@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project name="cruise" basedir="." default="pkg">
-    <property name="scala.home" value="/Users/twer/sdk/scala-2.8.1.final"/>
+    <property name="scala.home" value="/Users/wushaobo/Works/scala/scala-2.8.1.final"/>
     <property name="scala-compiler.jar" value="${scala.home}/lib/scala-compiler.jar"/>
     <property name="scala-library.jar" value="${scala.home}/lib/scala-library.jar"/>
     <property name="test.dir" value="app/test"></property>
@@ -13,16 +13,17 @@
     <property name="compiled.src.dir" value="${target.dir}/production/classes"></property>
     <property name="compiled.test.dir" value="${target.dir}/test/classes"></property>
 
-
-    <taskdef resource="scala/tools/ant/antlib.xml">
-        <classpath refid="scala.classpath"/>
-    </taskdef>
-
     <!--define all the path-->
     <path id="scala.classpath">
         <pathelement location="${scala-compiler.jar}"/>
         <pathelement location="${scala-library.jar}"/>
     </path>
+
+    <taskdef resource="scala/tools/ant/antlib.xml">
+        <classpath refid="scala.classpath"/>
+    </taskdef>
+
+
 
     <path id="source.lib.classpath">
         <fileset dir="app/webapp/WEB-INF/lib">
