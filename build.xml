@@ -3,15 +3,16 @@
     <property name="scala.home" value="/Users/wushaobo/Works/scala/scala-2.8.1.final"/>
     <property name="scala-compiler.jar" value="${scala.home}/lib/scala-compiler.jar"/>
     <property name="scala-library.jar" value="${scala.home}/lib/scala-library.jar"/>
-    <property name="test.dir" value="app/test"></property>
-    <property name="src.dir" value="app/src"></property>
-    <property name="server.src.dir" value="server/src"></property>
-    <property name="target.dir" value="target"></property>
-    <property name="dist.dir" value="dist"></property>
+    <property name="mail.jar" value="app/lib/mail.jar"/>
+    <property name="test.dir" value="app/test"/>
+    <property name="src.dir" value="app/src"/>
+    <property name="server.src.dir" value="server/src"/>
+    <property name="target.dir" value="target"/>
+    <property name="dist.dir" value="dist"/>
 
-    <property name="compiled.server.dir" value="${target.dir}/server/classes"></property>
-    <property name="compiled.src.dir" value="${target.dir}/production/classes"></property>
-    <property name="compiled.test.dir" value="${target.dir}/test/classes"></property>
+    <property name="compiled.server.dir" value="${target.dir}/server/classes"/>
+    <property name="compiled.src.dir" value="${target.dir}/production/classes"/>
+    <property name="compiled.test.dir" value="${target.dir}/test/classes"/>
 
     <!--define all the path-->
     <path id="scala.classpath">
@@ -19,11 +20,13 @@
         <pathelement location="${scala-library.jar}"/>
     </path>
 
+    <path id="mail.classpath">
+        <pathelement location="${mail.jar}"/>
+    </path>
+
     <taskdef resource="scala/tools/ant/antlib.xml">
         <classpath refid="scala.classpath"/>
     </taskdef>
-
-
 
     <path id="source.lib.classpath">
         <fileset dir="app/webapp/WEB-INF/lib">
@@ -32,8 +35,9 @@
     </path>
 
     <path id="compile.source.classpath">
-        <path refid="scala.classpath"></path>
-        <path refid="source.lib.classpath"></path>
+        <path refid="scala.classpath"/>
+        <path refid="mail.classpath"/>
+        <path refid="source.lib.classpath"/>
     </path>
 
 
@@ -47,12 +51,12 @@
         <fileset dir="app/lib">
             <include name="**/*.jar"/>
         </fileset>
-        <path refid="compile.source.classpath"></path>
+        <path refid="compile.source.classpath"/>
         <pathelement location="${dist.dir}/feedback2me.jar"/>
     </path>
 
     <path id="run.test.classpath">
-        <path refid="compile.test.classpath"></path>
+        <path refid="compile.test.classpath"/>
         <pathelement location="${compiled.test.dir}"/>
     </path>
 
@@ -135,15 +139,15 @@
 
     <target name="s" depends="pkg">
         <java dir="dist/expanded" jar="dist/expanded/start.jar" fork='true'>
-            <sysproperty key="url" value="http://deadlock.netbeans.org/hudson/api/xml"></sysproperty>
-            <sysproperty key="env" value="production"></sysproperty>
+            <sysproperty key="url" value="http://deadlock.netbeans.org/hudson/api/xml"/>
+            <sysproperty key="env" value="production"/>
         </java>                           
     </target>
 
     <target name="rea">
         <java dir="dist/expanded" jar="dist/expanded/start.jar" fork='true'>
-            <sysproperty key="url" value="http://10.113.192.70:9080/api/xml"></sysproperty>
-            <sysproperty key="env" value="production"></sysproperty>
+            <sysproperty key="url" value="http://10.113.192.70:9080/api/xml"/>
+            <sysproperty key="env" value="production"/>
         </java>
     </target>
 </project>
