@@ -1,6 +1,5 @@
-package com.feedback2me
+package com.feedback2me.domain
 
-import domain.{EmailMessages, EmailMessage}
 import org.scalatest.Spec
 import org.scalatest.matchers.ShouldMatchers
 import org.joda.time.DateTime

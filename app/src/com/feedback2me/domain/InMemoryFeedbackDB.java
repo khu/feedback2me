@@ -1,18 +1,19 @@
 package com.feedback2me.domain;
 
+import org.joda.time.DateTime;
+
 import javax.mail.Address;
 import javax.mail.Message;
 import javax.mail.MessagingException;
-import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.List;
 
 public class InMemoryFeedbackDB {
-    private Hashtable<Address, List<Message>> feedbackDB;
+    private Hashtable<String, EmailMessages> feedbackDB;
     private static InMemoryFeedbackDB instance;
+    public static final String GMAIL_ADDRESS = "feedback.recorder@gmail.com";
 
     private InMemoryFeedbackDB() {
-        feedbackDB = new Hashtable<Address, List<Message>>();
+        feedbackDB = new Hashtable<String, EmailMessages>();
     }
 
     public static InMemoryFeedbackDB getInstance() {
@@ -22,10 +23,14 @@ public class InMemoryFeedbackDB {
         return instance;
     }
 
-    public void resetWith(Message[] mails) throws MessagingException {
+    public void resetWith(Message[] mails){
         clearDB();
         for(Message mail : mails){
-            insertIntoDB(mail);
+            try {
+                insertIntoDB(mail);
+            } catch (MessagingException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -34,22 +39,35 @@ public class InMemoryFeedbackDB {
     }
 
     private void insertIntoDB(Message mail) throws MessagingException {
-        Address receiver = getFeedbackReceiver(mail.getAllRecipients());
+        String receiver = getFeedbackReceiver(mail.getAllRecipients());
         if (!feedbackDB.containsKey(receiver)){
-            feedbackDB.put(receiver, new ArrayList<Message>());
+            feedbackDB.put(receiver, new EmailMessages());
         }
 
-        List<Message> messages = feedbackDB.get(receiver);
-        messages.add(mail);
+        EmailMessages messages = feedbackDB.get(receiver);
+        messages.add(createEmailMessage(receiver, mail));
     }
 
-    private Address getFeedbackReceiver(Address[] addresses) {
-        Address receiver = null;
+    private EmailMessage createEmailMessage(String receiver, Message mail){
+        try {
+            return new EmailMessage(mail.getFrom()[0].toString(),
+                    receiver,
+                    mail.getSubject().toString(),
+                    mail.getContent().toString(),
+                    new DateTime(mail.getReceivedDate()));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private String getFeedbackReceiver(Address[] addresses) {
+        String receiver = null;
 
         for(int i=0; i<addresses.length; i++){
             Address address = addresses[i];
-            if(!address.equals("feedback.recorder@gmail.com")) {
-                receiver = address;
+            if(!address.equals(GMAIL_ADDRESS)) {
+                receiver = address.toString();
                 break;
             }
         }
