@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project name="cruise" basedir="." default="pkg">
-    <property name="scala.home" value="/Users/wushaobo/Works/scala/scala-2.8.1.final"/>
+    <property name="scala.home" value="/Users/twer/sdk/scala-2.8.1.final"/>
     <property name="scala-compiler.jar" value="${scala.home}/lib/scala-compiler.jar"/>
     <property name="scala-library.jar" value="${scala.home}/lib/scala-library.jar"/>
-    <property name="mail.jar" value="app/lib/mail.jar"/>
     <property name="test.dir" value="app/test"/>
     <property name="src.dir" value="app/src"/>
     <property name="server.src.dir" value="server/src"/>
@@ -20,10 +19,6 @@
         <pathelement location="${scala-library.jar}"/>
     </path>
 
-    <path id="mail.classpath">
-        <pathelement location="${mail.jar}"/>
-    </path>
-
     <taskdef resource="scala/tools/ant/antlib.xml">
         <classpath refid="scala.classpath"/>
     </taskdef>
@@ -36,7 +31,6 @@
 
     <path id="compile.source.classpath">
         <path refid="scala.classpath"/>
-        <path refid="mail.classpath"/>
         <path refid="source.lib.classpath"/>
     </path>
 
