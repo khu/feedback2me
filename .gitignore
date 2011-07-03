@@ -2,6 +2,7 @@ out
 dist
 *.log
 *.log.*
+*.war
 target
 app/webapp/WEB-INF/classes
 feedback2.me.iws

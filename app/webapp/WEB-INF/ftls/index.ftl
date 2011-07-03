@@ -46,7 +46,7 @@
 				"min_zoom":5,
 				"max_zoom":60,
 				"show_centerline":true,
-				"data_source":"/iamkaihu@gmail.com.json",
+				"data_source":"/${email}.json",
 				"show_footer":true,
 				"size_importance":true,
 				"display_zoom_level":true

@@ -129,13 +129,14 @@
                 <exclude name="**/classes/**/*"/>
             </fileset>
         </copy>
+        <zip destfile="${dist.dir}/feedback.me.war" basedir="${dist.dir}/expanded/feedback2me"/>
     </target>
 
     <target name="s" depends="pkg">
         <java dir="dist/expanded" jar="dist/expanded/start.jar" fork='true'>
             <sysproperty key="url" value="http://deadlock.netbeans.org/hudson/api/xml"/>
             <sysproperty key="env" value="production"/>
-        </java>                           
+        </java>
     </target>
 
     <target name="rea">

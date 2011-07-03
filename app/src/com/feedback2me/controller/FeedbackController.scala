@@ -6,18 +6,21 @@ import org.springframework.web.bind.annotation.{ModelAttribute, PathVariable, Re
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 import com.feedback2me.domain.AllEmailMessages
+import java.util.HashMap
 
 @Controller
 class FeedbackController {
   @RequestMapping(value = Array("/{email}.html"), method = Array(RequestMethod.GET))
   def index(@PathVariable email: String) = {
-    new ModelAndView("index")
+    val data: HashMap[String, String] = new HashMap()
+    data.put("email", email)
+    new ModelAndView("index", data)
   }
 
   @RequestMapping(value = Array("/{email}.json"), method = Array(RequestMethod.GET))
   def timeline(@PathVariable email: String) = {
     val focusDate: String = new DateTime().minusWeeks(1).toString(DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss"))
-    val events =  AllEmailMessages.lookUp(email).toJson
+    val events = AllEmailMessages.lookUp(email).toJson
     val jsonTemplate = """[
   {
     "id": "feedback",

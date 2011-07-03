@@ -30,7 +30,7 @@ public class FeedbackServer {
 
         WebAppContext wac = new WebAppContext();
         if ("production".equals(System.getProperty("env"))) {
-            wac.setResourceBase("./feedback2me");
+            wac.setWar("./feedback.me.war");
         } else {
             if (new File("./app/webapp/WEB-INF/classes").exists()) {
                 FileUtils.cleanDirectory(new File("./app/webapp/WEB-INF/classes"));
