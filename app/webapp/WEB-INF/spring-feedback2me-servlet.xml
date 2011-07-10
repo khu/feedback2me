@@ -18,7 +18,10 @@
         <property name="cache" value="false"/>
         <property name="prefix" value=""/>
         <property name="suffix" value=".ftl"/>
-        <property name="exposeSpringMacroHelpers" value="true"/>
+        <property name="requestContextAttribute"  value="request" />
+        <property name="exposeSpringMacroHelpers" value="true" />
+        <property name="exposeRequestAttributes"  value="true" />
+        <property name="exposeSessionAttributes"  value="true" />
     </bean>
 
 

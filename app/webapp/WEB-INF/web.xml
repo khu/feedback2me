@@ -18,7 +18,6 @@
         <param-value>/WEB-INF/applicationContext-*.xml</param-value>
     </context-param>
 
-
     <listener>
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
@@ -27,64 +26,25 @@
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-
     <servlet>
         <servlet-name>spring-feedback2me</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <servlet>
-        <servlet-name>default</servlet-name>
-        <servlet-class>org.mortbay.jetty.servlet.DefaultServlet</servlet-class>
-        <init-param>
-            <param-name>cacheControl</param-name>
-            <param-value>max-age=36000,public</param-value>
-        </init-param>
-        <init-param>
-            <param-name>acceptRanges</param-name>
-            <param-value>true</param-value>
-        </init-param>
-        <init-param>
-            <param-name>dirAllowed</param-name>
-            <param-value>true</param-value>
-        </init-param>
-        <init-param>
-            <param-name>redirectWelcome</param-name>
-            <param-value>false</param-value>
-        </init-param>
-        <init-param>
-            <param-name>maxCacheSize</param-name>
-            <param-value>30000</param-value>
-        </init-param>
-        <init-param>
-            <param-name>maxCachedFileSize</param-name>
-            <param-value>254000</param-value>
-        </init-param>
-        <init-param>
-            <param-name>maxCachedFiles</param-name>
-            <param-value>1000</param-value>
-        </init-param>
-        <init-param>
-            <param-name>useFileMappedBuffer</param-name>
-            <param-value>true</param-value>
-        </init-param>
-        <load-on-startup>0</load-on-startup>
-    </servlet>
-
     <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>/css/*</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>/js/*</url-pattern>
+        <servlet-name>spring-feedback2me</servlet-name>
+        <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>spring-feedback2me</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>*.json</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>
