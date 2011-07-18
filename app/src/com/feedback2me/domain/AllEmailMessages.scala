@@ -2,7 +2,6 @@ package com.feedback2me.domain
 
 import javax.mail.{MessagingException, Message}
 import collection.mutable.HashMap
-import com.feedback2me.domain.EmailMessages
 
 object AllEmailMessages {
   final val GMAIL_ADDRESS: String = "feedback.recorder@gmail.com"

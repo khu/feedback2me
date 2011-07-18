@@ -11,7 +11,9 @@ class JsonView(val json:String) extends View {
   @Override
   def render(model: Map[String, _], reqest: HttpServletRequest, response: HttpServletResponse) {
     //setContentType("text/html; charset=UTF-8"); response.setCharacterEncoding("UTF-8 ");
+    response.setContentType("application/json; charset=UTF-8")
     response.setCharacterEncoding("UTF-8")
+//    response.setHeader("content-encoding","gzip")
     val printWriter: PrintWriter = response.getWriter
     printWriter.write(this.json);
     printWriter.flush
@@ -19,6 +21,6 @@ class JsonView(val json:String) extends View {
   }
 
   @Override
-  def getContentType = {"text/x-json; charset=UTF-8"}
+  def getContentType = {"application/json; charset=UTF-8"}
 
 }

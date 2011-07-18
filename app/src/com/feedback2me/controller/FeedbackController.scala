@@ -21,17 +21,16 @@ class FeedbackController {
   def timeline(@PathVariable email: String) = {
     val focusDate: String = new DateTime().minusWeeks(1).toString(DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss"))
     val events = AllEmailMessages.lookUp(email).toJson
-    val jsonTemplate = """[
-  {
-    "id": "feedback",
-    "title": "The feedback for you",
-    "focus_date": "%s",
-    "initial_zoom": "48",
-	  "color": "#82530d",
-    "events": %s
+    //TODO: format this
+    val jsonTemplate = """{"memos":%s}"""
+    new JsonView(String.format(jsonTemplate, events))
   }
-  ]
-"""
-    new JsonView(String.format(jsonTemplate, focusDate, events))
+  @RequestMapping(value = Array("/{email}.date"), method = Array(RequestMethod.GET))
+  def timerange(@PathVariable email: String) = {
+    val today: String = new DateTime().minusWeeks(1).toString(DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss"))
+    val events = AllEmailMessages.lookUp(email).toDate
+    //TODO: format this
+    val jsonTemplate = """%s"""
+    new JsonView(String.format(jsonTemplate, events))
   }
 }

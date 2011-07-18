@@ -6,13 +6,15 @@ import javax.mail.internet.{MimeBodyPart, MimeMultipart}
 import java.lang.StringBuilder
 import java.io.{ByteArrayOutputStream, InputStreamReader, BufferedReader}
 import javax.mail._
+import java.util.HashSet
+import collection.immutable.HashSet
 
 class EmailMessages extends LogHelper {
   var messages = List[EmailMessage]()
 
 
   def add(mail: Message) = {
-//    val bo: ByteArrayOutputStream = new ByteArrayOutputStream();
+    //    val bo: ByteArrayOutputStream = new ByteArrayOutputStream();
     //    mail.writeTo(bo)
     //    val content = bo.toString
     //    bo.close()
@@ -57,4 +59,14 @@ class EmailMessages extends LogHelper {
     }
     list.mkString("[", ",", "]")
   }
+
+  def toDate = {
+    var list = List[String]()
+    for (message <- messages) {
+      list = list ::: List(message.toDate)
+    }
+    var set=list.sortBy(e => e).toSet
+    set.mkString("[", ",", "]")
+  }
+
 }

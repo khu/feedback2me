@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project name="cruise" basedir="." default="pkg">
-    <property name="scala.home" value="/Users/twer/sdk/scala-2.8.1.final"/>
+    <property file="build.properties"/>
     <property name="scala-compiler.jar" value="${scala.home}/lib/scala-compiler.jar"/>
     <property name="scala-library.jar" value="${scala.home}/lib/scala-library.jar"/>
     <property name="test.dir" value="app/test"/>
@@ -131,7 +131,9 @@
         </copy>
         <zip destfile="${dist.dir}/feedback.me.war" basedir="${dist.dir}/expanded/feedback2me"/>
     </target>
-
+    <target name="deploy" depends="pkg">
+        <copy file="${dist.dir}/feedback.me.war" todir="${tomcat.webapps}" />
+    </target>
     <target name="s" depends="pkg">
         <java dir="dist/expanded" jar="dist/expanded/start.jar" fork='true'>
             <sysproperty key="url" value="http://deadlock.netbeans.org/hudson/api/xml"/>

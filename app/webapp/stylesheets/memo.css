@@ -1,0 +1,381 @@
+.viewport {
+    overflow: hidden;
+    position: relative;
+}
+.viewport .thumbnails {
+    max-height: 72px;
+    position: relative;
+}
+.viewport .thumbnails > div {
+    display: inline-block;
+    max-height: 72px;
+    overflow: hidden;
+}
+#timeline .memo > .content {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    min-height: 40px;
+    padding: 10px;
+}
+#timeline .memo > .content.glow-in-story {
+    border: 3px solid #4FABD9;
+    box-shadow: 0 0 20px #4FABD9 inset;
+}
+#timeline .memo > .content a.not-found {
+    color: #999999;
+}
+#timeline .memo > .content.photo {
+    text-align: center;
+}
+#timeline .memo > .content.photo label {
+    display: block;
+}
+#timeline .memo > .content.photo > div {
+    overflow: hidden;
+}
+#timeline .memo > .content a.contributor {
+    background-repeat: no-repeat;
+    border-radius: 4px 4px 4px 4px;
+    height: 28px;
+    position: absolute;
+    right: -1px;
+    top: 5px;
+    width: 28px;
+}
+#timeline .memo > .content a.add-remove {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 25px;
+    left: 48%;
+    position: absolute;
+    top: 1px;
+    width: 25px;
+}
+#timeline .memo > .content a.add-remove.add {
+    background-image: url("./images/stories/add_memo.png");
+}
+#timeline .memo > .content a.add-remove.remove {
+    background-image: url("./images/stories/remove_memo.png");
+}
+#timeline .memo.photo-stack > .content a.add-remove {
+    position: absolute;
+    right: -11px;
+    top: -9px;
+}
+#timeline .memo.photo-stack > .content a.contributor {
+    position: absolute;
+    right: -11px;
+    top: -10px;
+}
+#timeline .memo.expanded > .content {
+    max-height: 100%;
+}
+#timeline .memo.photo-stack > .content {
+    position: relative;
+}
+#timeline .memo.photo-stack > .content > .effect {
+    background-color: #000000;
+    border-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+}
+#timeline .memo.photo-stack > .content > .effect.first {
+    bottom: -3px;
+    left: 3px;
+    right: -3px;
+    top: 3px;
+    z-index: -10;
+}
+#timeline .memo.photo-stack > .content > .effect.second {
+    bottom: -6px;
+    left: 6px;
+    right: -6px;
+    top: 6px;
+    z-index: -20;
+}
+#timeline .memo.photo-stack > .content label {
+    font-weight: 700;
+}
+#timeline .memo.photo-stack.expanded > .content > .effect {
+    display: none;
+}
+#timeline .memo.photo-stack.expanded > .content label {
+    font-weight: 400;
+}
+#timeline .memo.photo-stack .frame {
+    margin-bottom: 5px;
+    text-align: center;
+}
+#timeline .memo.photo-stack .viewport {
+    background-image: url("./images/ajax-loader.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 78px;
+    overflow: hidden;
+    position: relative;
+    width: 503px;
+}
+#timeline .memo.photo-stack .viewport .thumbnails {
+    height: 78px;
+    left: 0;
+    position: relative;
+}
+#timeline .memo.photo-stack .viewport .thumbnails > div {
+    border: 5px solid #FFFFFF;
+    display: inline-block;
+    max-height: 78px;
+    overflow: hidden;
+}
+#timeline .memo.photo-stack .viewport .thumbnails > div img {
+    border: 2px solid #FFFFFF;
+}
+#timeline .memo.foursquare-stack > .content {
+    position: relative;
+}
+#timeline .memo.foursquare-stack > .content > .effect {
+    background-color: #000000;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+}
+#timeline .memo.foursquare-stack > .content > .effect.first {
+    bottom: -3px;
+    left: 3px;
+    right: -3px;
+    top: 3px;
+    z-index: -10;
+}
+#timeline .memo.foursquare-stack > .content > .effect.second {
+    bottom: -6px;
+    left: 6px;
+    right: -6px;
+    top: 6px;
+    z-index: -20;
+}
+#timeline .memo.foursquare-stack > .content label {
+    font-weight: 700;
+}
+#timeline .memo.foursquare-stack .frame {
+    margin-bottom: 5px;
+    min-height: 300px;
+    text-align: center;
+}
+#timeline .memo.foursquare-stack .viewport {
+    overflow: hidden;
+    position: relative;
+}
+#timeline .memo.foursquare-stack .viewport .thumbnails {
+    max-height: 72px;
+    position: relative;
+}
+#timeline .memo.foursquare-stack .viewport .thumbnails > div {
+    display: inline-block;
+    max-height: 72px;
+    overflow: hidden;
+    width: 96px;
+}
+#timeline .memo.foursquare-stack .viewport .thumbnails > div + div {
+    margin-left: 5px;
+}
+.music-small, .music-expanded {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+}
+.music-expanded img {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 3px;
+}
+.music-small img {
+    border: 1px solid #CCCCCC;
+}
+.music-small .artist {
+    padding-left: 10px;
+}
+.music-small .group {
+    border-bottom: medium none;
+}
+.music-small .artist-group li {
+    line-height: 14px;
+    padding: 0;
+}
+.music-small .artist-group {
+    margin: 8px 0 0;
+}
+.music-small .track-name {
+    font-weight: bold !important;
+}
+.other-artists {
+    color: #999999;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 5px 0 2px 0;
+}
+.total-plays {
+    color: red;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.music-expanded {
+    padding-bottom: 0;
+}
+.group {
+    border-bottom: 1px solid #F4F4F4;
+}
+.music-expanded .group {
+    margin-bottom: 6px;
+}
+.music-expanded .artist-group {
+    float: right;
+    width: 414px;
+}
+.artist-group {
+    list-style: none outside none;
+}
+.artist-group li {
+    padding: 1px 0 0;
+}
+.artist-group .artist {
+    color: #444444;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0 2px 10px;
+}
+.artist-group .track-name {
+    color: #777777;
+    font-size: 11px;
+    font-weight: normal;
+}
+.artist-group .track-count {
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.artist-group .loading-track {
+    background: url("./images/music_loader.gif") no-repeat scroll right center transparent;
+    color: #0071B8;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 28px;
+}
+.music-play-btn {
+    background: url("./images/play_btn.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 12px;
+    margin: 1px 5px 0 10px;
+    text-indent: -999em;
+    width: 24px;
+}
+.memoActions {
+    height: 17px;
+    margin-top: 9px;
+}
+a.setMemoPrivacy:link, a.setMemoPrivacy:active, a.setMemoPrivacy:visited {
+    display: block;
+    float: left;
+    height: 13px;
+    padding: 3px 5px 2px;
+    text-indent: -999em;
+    width: 18px;
+}
+a.setMemoPrivacy.privateMemo:link, a.setMemoPrivacy.privateMemo:active, a.setMemoPrivacy.privateMemo:visited {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 6px -2px, -moz-linear-gradient(center top , #FFFFFF 0%, #EFEFEF 100%) repeat scroll 0 0 transparent;
+}
+a.setMemoPrivacy.friendsMemo:link, a.setMemoPrivacy.friendsMemo:active, a.setMemoPrivacy.friendsMemo:visited {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 5px -42px, -moz-linear-gradient(center top , #FFFFFF 0%, #EFEFEF 100%) repeat scroll 0 0 transparent;
+}
+a.setMemoPrivacy.publicMemo:link, a.setMemoPrivacy.publicMemo:active, a.setMemoPrivacy.publicMemo:visited {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 7px -22px, -moz-linear-gradient(center top , #FFFFFF 0%, #EFEFEF 100%) repeat scroll 0 0 transparent;
+}
+a.setMemoPrivacy.privateMemo:hover {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 6px -2px, -moz-linear-gradient(center top , #F7F7F7 0%, #D3D3D3 100%) repeat scroll 0 0 transparent;
+}
+a.setMemoPrivacy.friendsMemo:hover {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 5px -42px, -moz-linear-gradient(center top , #F7F7F7 0%, #D3D3D3 100%) repeat scroll 0 0 transparent;
+}
+a.setMemoPrivacy.publicMemo:hover {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 7px -22px, -moz-linear-gradient(center top , #F7F7F7 0%, #D3D3D3 100%) repeat scroll 0 0 transparent;
+}
+a.getMemoSource:link, a.getMemoSource:active, a.getMemoSource:visited {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 0 -83px transparent;
+    display: inline-block;
+    float: right;
+    height: 14px;
+    margin-top: 3px;
+    text-indent: -999em;
+    width: 19px;
+}
+a.getMemoSource:hover {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 0 -183px transparent;
+}
+a.memoDeepLink:link, a.memoDeepLink:active, a.memoDeepLink:visited {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 0 -62px transparent;
+    display: inline-block;
+    float: right;
+    height: 17px;
+    margin-left: 12px;
+    margin-top: 3px;
+    text-indent: -999em;
+    width: 20px;
+}
+a.memoDeepLink:hover {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 0 -162px transparent;
+}
+a.shareMemo {
+    float: right;
+    margin-left: 12px;
+}
+p.privacyNote {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+}
+ul.shareMemoOptions {
+    width: 350px;
+}
+ul.shareMemoOptions li a, ul.shareMemoOptions li.shareURL {
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 28px;
+}
+ul.shareMemoOptions li a:hover, ul.shareMemoOptions li.shareURL:hover {
+    background-color: #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+}
+ul.shareMemoOptions li a.shareFacebook {
+    background: url("./images/iconsShareSprite.png") no-repeat scroll 3px 4px transparent;
+}
+ul.shareMemoOptions li a.shareFacebook:hover {
+    background-color: #DAE2FF;
+}
+ul.shareMemoOptions li a.shareTwitter {
+    background: url("./images/iconsShareSprite.png") no-repeat scroll 3px -24px transparent;
+}
+ul.shareMemoOptions li a.shareTwitter:hover {
+    background-color: #DBF0FF;
+}
+ul.shareMemoOptions li.shareURL {
+    background: url("./images/memoActionsSprite.png") no-repeat scroll 3px -57px transparent;
+    display: none;
+}
+ul.shareMemoOptions li.shareURL input {
+    margin-left: 7px;
+    width: 175px;
+}
+.videoDiv, .imgDiv {
+    text-align: center;
+}

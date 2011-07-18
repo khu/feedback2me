@@ -1,0 +1,72 @@
+.databox {
+	border: 1px solid #ABABAA;
+	background-color: #E7F3FF;
+	padding: 12px;
+	margin-top: 15px;
+}
+
+.databox textarea {
+	font-family: monospace;
+	border: 1px solid #ABABAA;
+	
+	width: 924px;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+.databox a {
+	float :right;
+}
+.databox label {
+	float :left;
+}
+#jsondataurl {
+	border: 1px solid #ABABAA;
+	width: 924px;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+.stats {
+	font-size: 9px;
+	color: grey;
+}
+
+.moreinfobox {
+	border: 1px solid #ABABAA;
+	background-color: #EFEFEF;
+	padding: 12px;	
+	margin-top: 15px;
+}
+
+.moreinfobox p {
+	margin-bottom: 3px;
+}
+.addinfo {
+	float: right;	
+}
+.addinbox {
+	text-align: center;	
+}
+
+.smallindent {
+	margin-left: 10px;
+	margin-bottom: 20px
+}
+
+h3 {
+	font-size: 131%;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+h4 {
+	font-size: 108%;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 4px;
+}
+
+body, h1, h2, h3 {
+	font-family: verdana, arial, helvetica;
+}
