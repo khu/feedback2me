@@ -25,8 +25,6 @@ class EmailMessage(val from: String,
     values.put("author",author)
     values.put("title",title)
     val jsonText = JSONValue.toJSONString(values)
-//    var values="{\"id\": \"" + receivedDate.getMillis.toString + "\",\"title\" : {\"text\" : \"" + subject + "\"}, \"user_id\" : \"" + to + "\", \"author\" : {\"name\":\"" + from + "\"}, \"text\" : {\"text\":\"" + content + "\"}, \"created_at\" : " + this.toDate + " }";
-//    val jsonText = values.replaceAll("\n","").replaceAll("\r","");
     jsonText
   }
 

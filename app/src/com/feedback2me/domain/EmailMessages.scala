@@ -65,7 +65,8 @@ class EmailMessages extends LogHelper {
     for (message <- messages) {
       list = list ::: List(message.toDate)
     }
-    var set=list.sortBy(e => e).toSet
+    list=list.sortBy(e => e)
+    var set=list.toSet
     set.mkString("[", ",", "]")
   }
 
