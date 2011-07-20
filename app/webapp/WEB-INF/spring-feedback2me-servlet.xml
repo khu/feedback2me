@@ -29,7 +29,7 @@
         <property name="delay" value="1000"/>
         <!-- run every 30 seconds -->
         <property name="period" value="7200000"/>
-        <property name="timerTask" ref="feedbackCollectionService"/>
+        <property name="timerTask" ref="JFeedbackCollectionService"/>
     </bean>
 
 

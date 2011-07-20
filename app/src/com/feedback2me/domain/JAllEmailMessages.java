@@ -11,13 +11,14 @@ public class JAllEmailMessages {
 
   public void reset(Message [] mails) {
     clearDB();
-    JEmailMessages messages=null;
+    JEmailMessages messages;
     for (Message mail : mails) {
       try {
-          InternetAddress address= (InternetAddress)(mail.getRecipients(Message.RecipientType.TO)[0]);
+         InternetAddress address= (InternetAddress)(mail.getRecipients(Message.RecipientType.TO)[0]);
          String receiver =address.getAddress();
-         messages = lookUp(receiver).add(mail);
-        emailMessages.put(receiver, messages);
+         messages = lookUp(receiver);
+         messages.add(mail);
+         emailMessages.put(receiver, messages);
       } catch(MessagingException msgex) {
           msgex.printStackTrace();
       } catch (IOException e) {
@@ -28,11 +29,10 @@ public class JAllEmailMessages {
 
   public static JEmailMessages lookUp(String receiver) {
       JEmailMessages retVal;
-    try {
-      retVal = emailMessages.get(receiver);
-    } catch (Exception ex){
-      retVal = new JEmailMessages();
-    }
+      if (emailMessages.containsKey(receiver))
+        retVal = emailMessages.get(receiver);
+      else
+        retVal = new JEmailMessages();
       return retVal;
   }
 

@@ -11,42 +11,42 @@ public class JPOP3MailFetcher extends JMailFetcher{
     String username = "";
     String password = "";
 
+    Session session = null;
+    Store store = null;
+    Folder folder = null;
+    Logger logger = JLogHelper.getLogger(this);
+
     public JPOP3MailFetcher(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
-    Session session = null;
-    Store store = null;
-    Folder folder = null;
-    Logger logger = JLogHelper.getLogger();
-
     @Override
     void connect() {
-    logger.info("started to login into Gmail.");
-    Security.addProvider(new com.sun.security.sasl.Provider());
+        logger.info("started to login into Gmail.");
+        Security.addProvider(new com.sun.security.sasl.Provider());
 
-    String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
-    Properties pop3Props = new Properties();
+        String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
+        Properties pop3Props = new Properties();
 
-    pop3Props.setProperty("mail.pop3.socketFactory.class", SSL_FACTORY);
-    pop3Props.setProperty("mail.pop3.socketFactory.fallback", "false");
-    pop3Props.setProperty("mail.pop3.port", "995");
-    pop3Props.setProperty("mail.pop3.socketFactory.port", "995");
+        pop3Props.setProperty("mail.pop3.socketFactory.class", SSL_FACTORY);
+        pop3Props.setProperty("mail.pop3.socketFactory.fallback", "false");
+        pop3Props.setProperty("mail.pop3.port", "995");
+        pop3Props.setProperty("mail.pop3.socketFactory.port", "995");
 
-    session = Session.getInstance(pop3Props, null);
+        session = Session.getInstance(pop3Props, null);
 
         try{
-    store = session.getStore("pop3");
-    store.connect("pop.gmail.com", 995, username, password);
-    logger.info("logged in");
+            store = session.getStore("pop3");
+            store.connect("pop.gmail.com", 995, username, password);
+            logger.info("logged in");
         }catch (MessagingException msgex){
-    logger.info("logged failed");
+            logger.info("logged failed");
 
         }
-  }
+    }
 
-      @Override
+    @Override
     Message[] fetchEmailsFromFolder(String folderName) {
         Message [] messages=null;
         try{
@@ -67,16 +67,16 @@ public class JPOP3MailFetcher extends JMailFetcher{
 
         }
         return messages;
-  }
+    }
 
 
     @Override
     void disconnect() {
         try{
-        folder.close(false);
-        store.close();
+            folder.close(false);
+            store.close();
         }catch (MessagingException msgex){
-             msgex.printStackTrace();
+            msgex.printStackTrace();
         }
     }
 }

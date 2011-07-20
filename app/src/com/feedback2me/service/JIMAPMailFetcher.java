@@ -19,7 +19,7 @@ public class JIMAPMailFetcher extends JMailFetcher {
     Session session = null;
     Store store = null;
     Folder folder = null;
-    Logger logger = JLogHelper.getLogger();
+    Logger logger = JLogHelper.getLogger(this);
     @Override
     void connect() {
         Properties props = System.getProperties();
@@ -38,7 +38,7 @@ public class JIMAPMailFetcher extends JMailFetcher {
 
     @Override
     Message [] fetchEmailsFromFolder(String folderName) {
-        Message [] messages=null;
+        Message [] messages=new Message [0];
         try{
             folder = store.getFolder(folderName);
             folder.open(Folder.READ_ONLY);
@@ -52,9 +52,10 @@ public class JIMAPMailFetcher extends JMailFetcher {
             fp.add(FetchProfile.Item.ENVELOPE);
             fp.add(FetchProfile.Item.CONTENT_INFO);
             folder.fetch(messages, fp);
-            logger.info(messages.length + "messages has been downloadd.");
+            logger.info(messages.length + " messages has been downloadd.");
         } catch (MessagingException msgex){
-
+            logger.info("Can't Fetch from "+folderName+" :\n");
+            msgex.printStackTrace();
         }
         return messages;
     }
@@ -62,10 +63,10 @@ public class JIMAPMailFetcher extends JMailFetcher {
     @Override
     void disconnect() {
         try{
-        folder.close(false);
-        store.close();
+            folder.close(false);
+            store.close();
         }catch (MessagingException msgex){
-             msgex.printStackTrace();
+            msgex.printStackTrace();
         }
     }
 }

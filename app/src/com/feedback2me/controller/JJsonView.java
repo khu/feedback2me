@@ -16,15 +16,16 @@ import java.io.PrintWriter;
  */
 public class JJsonView implements View{
     public String json;
-    JJsonView(String json){
-        this.json=json;
+
+    public JJsonView(String json) {
+        this.json = json;
     }
 
     public String getContentType() {
         return "application/json; charset=UTF-8";
     }
 
-    public void render(Map<String, ?> model, HttpServletRequest reqest, HttpServletResponse response) {
+    public void render(Map<String, ?> model, HttpServletRequest reqest, HttpServletResponse response) throws Exception{
       //setContentType("text/html; charset=UTF-8"); response.setCharacterEncoding("UTF-8 ");
       response.setContentType("application/json; charset=UTF-8");
       response.setCharacterEncoding("UTF-8");

@@ -2,10 +2,10 @@ package com.feedback2me.service;
 
 import org.junit.Test;
 
-public class FeedbackCollectionServiceTest {
+public class JFeedbackCollectionServiceTest {
     @Test
     public void shouldReturnInMemoryDBInstanceWhenResetWithMails() {
-        FeedbackCollectionService service = new FeedbackCollectionService();
+        JFeedbackCollectionService service = new JFeedbackCollectionService();
         service.run();
     }
 }

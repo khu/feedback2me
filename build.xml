@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="cruise" basedir="." default="pkg">
+<project name="cruise" basedir="." default="deploy">
     <property file="build.properties"/>
-    <property name="scala-compiler.jar" value="${scala.home}/lib/scala-compiler.jar"/>
-    <property name="scala-library.jar" value="${scala.home}/lib/scala-library.jar"/>
     <property name="test.dir" value="app/test"/>
     <property name="src.dir" value="app/src"/>
     <property name="server.src.dir" value="server/src"/>
@@ -14,14 +12,6 @@
     <property name="compiled.test.dir" value="${target.dir}/test/classes"/>
 
     <!--define all the path-->
-    <path id="scala.classpath">
-        <pathelement location="${scala-compiler.jar}"/>
-        <pathelement location="${scala-library.jar}"/>
-    </path>
-
-    <taskdef resource="scala/tools/ant/antlib.xml">
-        <classpath refid="scala.classpath"/>
-    </taskdef>
 
     <path id="source.lib.classpath">
         <fileset dir="app/webapp/WEB-INF/lib">
@@ -30,7 +20,6 @@
     </path>
 
     <path id="compile.source.classpath">
-        <path refid="scala.classpath"/>
         <path refid="source.lib.classpath"/>
     </path>
 
@@ -66,11 +55,6 @@
     </target>
 
     <target name="compile.src" depends="prepare">
-        <scalac srcdir="${src.dir}" destdir="${compiled.src.dir}"
-                classpathref="compile.source.classpath">
-            <include name="**/*.scala"/>
-            <exclude name="**/*.java"/>
-        </scalac>
         <javac srcdir="${src.dir}" destdir="${compiled.src.dir}" classpathref="compile.source.classpath">
             <include name="**/*.java"/>
         </javac>
@@ -88,29 +72,18 @@
             <zipfileset includes="**/*" src="server/lib/jetty-util-6.1.26.jar"/>
             <zipfileset includes="**/*" src="server/lib/servlet-api-2.5-20081211.jar"/>
             <manifest>
-                <attribute name="Main-Class" value="com.feedback2me.FeedbackServer"/>
+                <attribute name="Main-Class" value="com.feedback2me.JFeedbackServer"/>
             </manifest>
         </jar>
     </target>
 
     <target name="compile.test" depends="prepare,jar.source">
-        <scalac srcdir="${test.dir}" destdir="${compiled.test.dir}" classpathref="compile.test.classpath">
-            <include name="**/*.scala"/>
-            <exclude name="**/*.java"/>
-        </scalac>
         <javac srcdir="${test.dir}" destdir="${compiled.test.dir}" classpathref="compile.test.classpath">
             <include name="**/*.java"/>
         </javac>
     </target>
 
     <target name="run.test" depends="compile.test" description="execute the tests">
-        <taskdef name="scalatest" classname="org.scalatest.tools.ScalaTestAntTask">
-            <classpath refid="run.test.classpath"/>
-        </taskdef>
-        <scalatest runpath="${compiled.test.dir}"
-                   haltonfailure="true" fork="false">
-            <reporter type="stdout"/>
-        </scalatest>
     </target>
 
     <target name="jar.source" depends="compile.src">

@@ -1,7 +1,6 @@
 package com.feedback2me.domain;
 
 import org.joda.time.DateTime;
-import org.junit.Test;
 
 public class JEmailMessagesTest {
     public void shouldReturnInMemoryDBInstanceWhenResetWithMails() {
