@@ -5,9 +5,9 @@
 <head>
 
     <script type='text/javascript'>
-    var url = "http://localhost:8080/feedback.me/${email}"
+    var url = "/feedback.me/${email}"
     </script>
-    <title>Memolane | See, search, and share your life</title>
+    <title> feedback2me </title>
     <link href='./stylesheets/screen.css' rel='stylesheet' type='text/css' />
     <link href='./stylesheets/global.css' rel='stylesheet' type='text/css' />
     <link href='./stylesheets/top.css' rel='stylesheet' type='text/css' />
@@ -41,8 +41,8 @@
     <link href='./images/favicon.gif' rel='shortcut icon' type='image/gif' />
     <link rel="image_src" type="image/png" href="./images/i-icon.png"/>
 
-    <meta name="title" content="Memolane | See, search, and share your life" />
-    <meta name="description" content="Keep your memories alive. Capture photos, music, tweets, posts, and much more. View and share your entire online life in one place. Explore and search your history. One timeline, a million memories." />
+    <meta name="title" content="feedback2me" />
+    <meta name="description" content="Keep your feedbacks alive. View your feedbacks in one place. Explore and search your history. One timeline, all feedbacks." />
 
 </head>
 
@@ -58,7 +58,7 @@
 </div>
 <![endif]-->
 
-    <div id='top' style="display:none;">
+    <div id='top' style="display:block;visibility:hidden;">
         <div class='panel'>
             <div class='extension'></div>
 
