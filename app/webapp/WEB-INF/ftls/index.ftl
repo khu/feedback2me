@@ -5,7 +5,7 @@
 <head>
 
     <script type='text/javascript'>
-    var url = "/feedback.me/${email}"
+    var url = "/${email}"
     </script>
     <title> feedback2me </title>
     <link href='./stylesheets/screen.css' rel='stylesheet' type='text/css' />
