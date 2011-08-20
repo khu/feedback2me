@@ -5,7 +5,7 @@ import org.junit.Test;
 public class FeedbackCollectionServiceTest {
     @Test
     public void shouldReturnInMemoryDBInstanceWhenResetWithMails() {
-        FeedbackCollectionService service = new FeedbackCollectionService();
-        service.run();
+//        FeedbackCollectionService service = new FeedbackCollectionService();
+//        service.run();
     }
 }

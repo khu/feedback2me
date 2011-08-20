@@ -154,26 +154,5 @@
         <p> This lane has no public content to show! </p>
     </div>
 
-
-    <div id="notification_container" style="display:none; top:auto; right:0px; bottom:0px; margin:0 0 10px 10px" >
-      <div id="notification_template" class="#{service}" style="margin-top:10px;text-align:center">
-          <a class="ui-notify-cross ui-notify-close" href="#">x</a>
-          <h1>#{title}</h1>
-          <p>#{text}</p>
-      </div>
-    </div>
-
-    <div class="CSStooltip">
-      <h5>A story is a new timeline where you and your friends can combine favorite memories from your own Memolane. <h5>
-
-    <h5>Stories can be about events in the past, present, or events yet to come.</h5>
-
-    <h5>Here are some examples:</h5>
-
-    <p><a href="http://memolane.com/stories/835d959b74eb9e4b60a6aa4f7e239f8b">Visit to Denmark</a></p>
-    <p><a href="http://memolane.com/stories/8a3d3bacd1eef863886c00023c5dc8ed">The Memolane Story</a></p>
-      <div class="CSSpointerBox"><div class="CSSpointer"><div class="CSSpointer-inner"></div></div></div>
-  </div>
-
 </body>
 </html>

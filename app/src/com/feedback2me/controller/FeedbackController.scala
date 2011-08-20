@@ -2,16 +2,16 @@ package com.feedback2me.controller
 
 import org.springframework.stereotype.Controller
 import org.springframework.web.servlet.ModelAndView
-import org.springframework.web.bind.annotation.{ModelAttribute, PathVariable, RequestMethod, RequestMapping}
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 import com.feedback2me.domain.AllEmailMessages
 import java.util.HashMap
+import org.springframework.web.bind.annotation._
 
 @Controller
 class FeedbackController {
-  @RequestMapping(value = Array("/{email}.html"), method = Array(RequestMethod.GET))
-  def index(@PathVariable email: String) = {
+  @RequestMapping(value = Array("/index.html"), method = Array(RequestMethod.GET))
+  def index(@RequestParam("email") email:String) = {
     val data: HashMap[String, String] = new HashMap()
     data.put("email", email)
     new ModelAndView("index", data)
