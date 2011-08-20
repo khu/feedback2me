@@ -35,6 +35,10 @@ class EmailMessage(val from: String,
     dateText
   }
 
+  def isReplied = {
+    this.subject.startsWith("Re:") || this.subject.startsWith("回复")
+  }
+
   override def toString = {
     toJson
   }

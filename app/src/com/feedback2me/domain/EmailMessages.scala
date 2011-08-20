@@ -12,8 +12,21 @@ import collection.immutable.HashSet
 class EmailMessages extends LogHelper {
   var messages = List[EmailMessage]()
 
+  def length = {
+    messages.length
+  }
+
+  def _add(emailMessage: EmailMessage): EmailMessages = {
+    if (!emailMessage.isReplied) {
+      messages = messages.:::(List(emailMessage))
+    }
+    val emailMessages = new EmailMessages()
+    emailMessages.messages = messages;
+    emailMessages
+  }
 
   def add(mail: Message) = {
+    //sRe:
     val content = readContent(mail)
     val emailMessage = new EmailMessage(mail.getFrom()(0).toString,
       mail.getRecipients(Message.RecipientType.TO)(0).toString,
@@ -21,9 +34,7 @@ class EmailMessages extends LogHelper {
       content,
       new DateTime(mail.getReceivedDate))
     logger.info("mail " + emailMessage)
-    messages = messages.:::(List(emailMessage))
-    val emailMessages = new EmailMessages()
-    emailMessages.messages = messages;
+    val emailMessages: EmailMessages = _add(emailMessage)
     emailMessages
   }
 
@@ -61,7 +72,7 @@ class EmailMessages extends LogHelper {
     for (message <- messages) {
       list = list ::: List(message.toDate)
     }
-    var set=list.sortBy(e => e).toSet
+    var set = list.sortBy(e => e).toSet
     set.mkString("[", ",", "]")
   }
 

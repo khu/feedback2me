@@ -12,5 +12,23 @@ class EmailMessageTest extends Spec with ShouldMatchers {
         "Pay attention to your careless", "jar", new DateTime(2002, 1, 1, 1, 1, 1, 1));
       mail.toJson should be === expectedMessage
     }
+
+    it("should consider the email is replied with RE:") {
+      val mail: EmailMessage = new EmailMessage("khu@thoughtwork.com", "sbwu@thoughtworks.com",
+        "Re: Pay attention to your careless", "jar", new DateTime(2002, 1, 1, 1, 1, 1, 1));
+      mail.isReplied should be === true
+    }
+
+    it("should consider the email is replied with 回复:") {
+      val mail: EmailMessage = new EmailMessage("khu@thoughtwork.com", "sbwu@thoughtworks.com",
+        "回复: Pay attention to your careless", "jar", new DateTime(2002, 1, 1, 1, 1, 1, 1));
+      mail.isReplied should be === true
+    }
+
+    it("should not consider the email is replied") {
+      val mail: EmailMessage = new EmailMessage("khu@thoughtwork.com", "sbwu@thoughtworks.com",
+        "Pay attention to your careless", "jar", new DateTime(2002, 1, 1, 1, 1, 1, 1));
+      mail.isReplied should be === false
+    }
   }
 }
