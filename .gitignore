@@ -1,0 +1,8 @@
+app/webapp/WEB-INF/classes/
+dist/
+feedback.me.war
+feedback2.me.iws
+ianalyse.log
+out/
+target/
+
