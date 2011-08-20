@@ -14,10 +14,6 @@ class EmailMessages extends LogHelper {
 
 
   def add(mail: Message) = {
-    //    val bo: ByteArrayOutputStream = new ByteArrayOutputStream();
-    //    mail.writeTo(bo)
-    //    val content = bo.toString
-    //    bo.close()
     val content = readContent(mail)
     val emailMessage = new EmailMessage(mail.getFrom()(0).toString,
       mail.getRecipients(Message.RecipientType.TO)(0).toString,
