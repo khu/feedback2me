@@ -63,6 +63,7 @@
         <mkdir dir="${compiled.server.dir}"/>
         <mkdir dir="${dist.dir}"/>
         <mkdir dir="${dist.dir}/expanded"/>
+        <mkdir dir="${dist.dir}/war"/>
     </target>
 
     <target name="compile.src" depends="prepare">
@@ -122,14 +123,14 @@
 
     <target name="pkg" depends="compile.server, jar.source">
         <copy file="${dist.dir}/start.jar" todir="${dist.dir}/expanded"/>
-        <copy file="${dist.dir}/feedback2me.jar" todir="app/webapp/WEB-INF/lib"/>
         <copy todir="${dist.dir}/expanded/feedback2me">
             <fileset dir="app/webapp">
                 <include name="**/*"/>
                 <exclude name="**/classes/**/*"/>
             </fileset>
         </copy>
-        <zip destfile="${dist.dir}/feedback.me.war" basedir="${dist.dir}/expanded/feedback2me"/>
+        <copy file="${dist.dir}/feedback2me.jar" todir="${dist.dir}/expanded/feedback2me/WEB-INF/lib"/>
+        <zip destfile="${dist.dir}/war/feedback.me.war" basedir="${dist.dir}/expanded/feedback2me"/>
     </target>
     <target name="deploy" depends="pkg">
         <copy file="${dist.dir}/feedback.me.war" todir="${tomcat.webapps}" />

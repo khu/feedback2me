@@ -6,3 +6,4 @@ ianalyse.log
 out/
 target/
 build.properties
+app/webapp/WEB-INF/lib/feedback2me.jar
